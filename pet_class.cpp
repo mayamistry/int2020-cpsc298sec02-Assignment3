@@ -1,5 +1,6 @@
 #include "pet.h"
 
+//default constructor
 Pet::Pet() {
   m_name = "";
   m_age = 0;
@@ -7,6 +8,7 @@ Pet::Pet() {
   m_weight = 0;
 }
 
+//overloaded constructor
 Pet::Pet(string name, int age, string type, double weight) {
   m_name = name;
   m_age = age;
@@ -14,6 +16,7 @@ Pet::Pet(string name, int age, string type, double weight) {
   m_weight = weight;
 }
 
+//Mutator methods for the member variables
 void Pet::SetName(string name) {
   m_name = name;
 }
@@ -30,6 +33,7 @@ void Pet::SetWeight(double weight) {
   m_weight = weight;
 }
 
+//Accessor methods for the member variables
 string Pet::GetName() {
   return m_name;
 }

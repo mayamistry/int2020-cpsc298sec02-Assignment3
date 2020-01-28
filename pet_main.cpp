@@ -4,7 +4,9 @@ using namespace std;
 
 #include "pet.h"
 
+//main method
 int main (int argc, char**argv) {
+  //objects stored on the heap
   Pet *p1 = new Pet("Bob", 2, "Dog", 15.9);
   Pet *p2 = new Pet("Mr. Whiskers", 3, "Cat", 10);
 
@@ -21,6 +23,9 @@ int main (int argc, char**argv) {
   cout << "Age: " << p2->GetAge() << endl;
   cout << "Type: " << p2->GetType() << endl;
   cout << "Weight: " << p2->GetWeight() << endl;
+
+  delete p1;
+  delete p2;
 
   return 0;
 }
